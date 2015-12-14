@@ -24,9 +24,8 @@ namespace Snake
             rightLine.Draw();
 
             Point p = new Point(3, 7, '*');
-
             Snake snake = new Snake(p, 6, Direction.DOWN);
-            snake.Draw();
+         //   snake.Draw();
 
             while(true)
             {
@@ -36,7 +35,7 @@ namespace Snake
                     snake.HandleKey(key.Key);
                 }
 
-                Thread.Sleep(300);
+                Thread.Sleep(200);
                 snake.Move();
             }
         }
